@@ -1,8 +1,8 @@
-package com.soldv.metro;
+package com.solvd.metro;
 
-import com.soldv.metro.person.TicketControl;
-import com.soldv.metro.person.TicketCounter;
-import com.soldv.metro.vehicle.Metro;
+import com.solvd.metro.person.TicketControl;
+import com.solvd.metro.person.TicketCounter;
+import com.solvd.metro.vehicle.Metro;
 
 import java.util.Objects;
 
@@ -11,7 +11,7 @@ public class MetroStation {
     private int entrance;
     private TicketCounter ticketCounter;
     private TicketControl ticketControl;
-    private com.soldv.metro.SecurityGate securityGate;
+    private SecurityGate securityGate;
     private Metro metro;
 
     public MetroStation(int entrance, Metro metro) {
@@ -43,11 +43,11 @@ public class MetroStation {
         this.ticketControl = ticketControl;
     }
 
-    public com.soldv.metro.SecurityGate getSecurityGate() {
+    public SecurityGate getSecurityGate() {
         return securityGate;
     }
 
-    public void setSecurityGate(com.soldv.metro.SecurityGate securityGate) {
+    public void setSecurityGate(SecurityGate securityGate) {
         this.securityGate = securityGate;
     }
 

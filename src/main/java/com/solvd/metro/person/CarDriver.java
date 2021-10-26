@@ -1,4 +1,4 @@
-package com.soldv.metro.person;
+package com.solvd.metro.person;
 
 public class CarDriver extends Person {
 

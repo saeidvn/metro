@@ -1,6 +1,6 @@
-package com.soldv.metro;
+package com.solvd.metro;
 
-import com.soldv.metro.person.Police;
+import com.solvd.metro.person.Police;
 
 import java.util.List;
 import java.util.Objects;

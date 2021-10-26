@@ -1,4 +1,4 @@
-package com.soldv.metro.vehicle;
+package com.solvd.metro.vehicle;
 
 import java.util.List;
 import java.util.Objects;

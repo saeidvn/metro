@@ -1,6 +1,6 @@
-package com.soldv.metro.vehicle;
+package com.solvd.metro.vehicle;
 
-import com.soldv.metro.person.Person;
+import com.solvd.metro.person.Person;
 
 import java.time.LocalDateTime;
 import java.util.Objects;

@@ -1,4 +1,4 @@
-package com.soldv.metro;
+package com.solvd.metro;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

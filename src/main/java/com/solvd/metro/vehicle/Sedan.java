@@ -1,9 +1,9 @@
-package com.soldv.metro.vehicle;
+package com.solvd.metro.vehicle;
 
-import com.soldv.metro.IEngine;
-import com.soldv.metro.ISportCar;
-import com.soldv.metro.Refuelable;
-import com.soldv.metro.person.Person;
+import com.solvd.metro.IEngine;
+import com.solvd.metro.ISportCar;
+import com.solvd.metro.Refuelable;
+import com.solvd.metro.person.Person;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,7 +21,7 @@ public class Sedan extends Car implements Refuelable, IEngine, ISportCar {
     private Boolean trunk;
 
     public Sedan(int size, String color, LocalDateTime creationDate, Person driver, String brand, String model,
-            int door, int compartment, int passengers, Boolean trunk) {
+                 int door, int compartment, int passengers, Boolean trunk) {
         super(size, color, creationDate, driver, brand, model, door, compartment, passengers, false);
         this.trunk = trunk;
     }

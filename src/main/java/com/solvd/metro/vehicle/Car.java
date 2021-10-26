@@ -1,7 +1,7 @@
-package com.soldv.metro.vehicle;
+package com.solvd.metro.vehicle;
 
-import com.soldv.metro.Refuelable;
-import com.soldv.metro.person.Person;
+import com.solvd.metro.Refuelable;
+import com.solvd.metro.person.Person;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

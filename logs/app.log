@@ -23,24 +23,24 @@
 2021-10-18 16:02:46,355 DEBUG c.s.l.MainClass [main] Policeman: 
 2021-10-18 16:02:46,355 DEBUG c.s.l.MainClass [main] Police ID is: 1 and Police name is: Policeman 0
 2021-10-18 16:02:46,356 DEBUG c.s.l.MainClass [main] CarDriver{age=27, name='null', surname='null', hairColor='Purple', eyeColor='Purple', height=0, weight=0, job='null'}
-2021-10-18 16:02:46,358 DEBUG c.s.l.MainClass [main] com.soldv.metro.Store@78a2da20
+2021-10-18 16:02:46,358 DEBUG c.s.l.MainClass [main] Store@78a2da20
 2021-10-18 16:02:46,359 DEBUG c.s.l.MainClass [main] [Interior, Exterior, Full]
 2021-10-18 16:02:46,359 DEBUG c.s.l.MainClass [main] [Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=21, offRoad=true}, Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=19, offRoad=true}]
 2021-10-18 16:02:46,360 DEBUG c.s.l.MainClass [main] Change oil
-2021-10-18 16:02:46,360 DEBUG c.s.l.MainClass [main] The Mappings are: {speaker=com.soldv.metro.AudioObject@dd3b207}
+2021-10-18 16:02:46,360 DEBUG c.s.l.MainClass [main] The Mappings are: {speaker=AudioObject@dd3b207}
 2021-10-18 16:02:46,361 DEBUG c.s.l.MainClass [main] Is the map empty? false
 2021-10-18 16:02:46,361 DEBUG c.s.l.MainClass [main] frontSpoiler
-2021-10-18 16:02:46,361 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@551bdc27
+2021-10-18 16:02:46,361 DEBUG c.s.l.MainClass [main] BodyObject@551bdc27
 2021-10-18 16:02:46,362 DEBUG c.s.l.MainClass [main] rearTire
-2021-10-18 16:02:46,362 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@58fdd99
+2021-10-18 16:02:46,362 DEBUG c.s.l.MainClass [main] BodyObject@58fdd99
 2021-10-18 16:02:46,363 DEBUG c.s.l.MainClass [main] rearSpoiler
-2021-10-18 16:02:46,363 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@6b1274d2
+2021-10-18 16:02:46,363 DEBUG c.s.l.MainClass [main] BodyObject@6b1274d2
 2021-10-18 16:02:46,363 DEBUG c.s.l.MainClass [main] rearWheel
-2021-10-18 16:02:46,363 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@58fdd99
+2021-10-18 16:02:46,363 DEBUG c.s.l.MainClass [main] BodyObject@58fdd99
 2021-10-18 16:02:46,363 DEBUG c.s.l.MainClass [main] frontWheel
-2021-10-18 16:02:46,364 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@7bc1a03d
+2021-10-18 16:02:46,364 DEBUG c.s.l.MainClass [main] BodyObject@7bc1a03d
 2021-10-18 16:02:46,364 DEBUG c.s.l.MainClass [main] frontTire
-2021-10-18 16:02:46,364 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@7bc1a03d
+2021-10-18 16:02:46,364 DEBUG c.s.l.MainClass [main] BodyObject@7bc1a03d
 2021-10-18 16:02:46,365 INFO c.s.l.MainClass [main] kar mikone !!
 2021-10-18 16:03:01,913 DEBUG c.s.l.MainClass [main] Wagon number 1: 
 2021-10-18 16:03:01,921 DEBUG c.s.l.Wagon [main] Wagon Name is: Wagon, Wagon Id is: 1
@@ -67,24 +67,24 @@
 2021-10-18 16:03:01,969 DEBUG c.s.l.MainClass [main] Policeman: 
 2021-10-18 16:03:01,969 DEBUG c.s.l.MainClass [main] Police ID is: 1 and Police name is: Policeman 0
 2021-10-18 16:03:01,969 DEBUG c.s.l.MainClass [main] CarDriver{age=27, name='null', surname='null', hairColor='Purple', eyeColor='Purple', height=0, weight=0, job='null'}
-2021-10-18 16:03:01,973 DEBUG c.s.l.MainClass [main] com.soldv.metro.Store@345965f2
+2021-10-18 16:03:01,973 DEBUG c.s.l.MainClass [main] Store@345965f2
 2021-10-18 16:03:01,974 DEBUG c.s.l.MainClass [main] [Interior, Exterior, Full]
 2021-10-18 16:03:01,974 DEBUG c.s.l.MainClass [main] [Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=21, offRoad=true}, Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=19, offRoad=true}]
 2021-10-18 16:03:01,975 DEBUG c.s.l.MainClass [main] Change oil
-2021-10-18 16:03:01,976 DEBUG c.s.l.MainClass [main] The Mappings are: {speaker=com.soldv.metro.AudioObject@429bd883}
+2021-10-18 16:03:01,976 DEBUG c.s.l.MainClass [main] The Mappings are: {speaker=AudioObject@429bd883}
 2021-10-18 16:03:01,976 DEBUG c.s.l.MainClass [main] Is the map empty? false
 2021-10-18 16:03:01,977 DEBUG c.s.l.MainClass [main] frontSpoiler
-2021-10-18 16:03:01,977 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@4d49af10
+2021-10-18 16:03:01,977 DEBUG c.s.l.MainClass [main] BodyObject@4d49af10
 2021-10-18 16:03:01,977 DEBUG c.s.l.MainClass [main] rearTire
-2021-10-18 16:03:01,978 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@279ad2e3
+2021-10-18 16:03:01,978 DEBUG c.s.l.MainClass [main] BodyObject@279ad2e3
 2021-10-18 16:03:01,978 DEBUG c.s.l.MainClass [main] rearSpoiler
-2021-10-18 16:03:01,978 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@58134517
+2021-10-18 16:03:01,978 DEBUG c.s.l.MainClass [main] BodyObject@58134517
 2021-10-18 16:03:01,978 DEBUG c.s.l.MainClass [main] rearWheel
-2021-10-18 16:03:01,979 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@279ad2e3
+2021-10-18 16:03:01,979 DEBUG c.s.l.MainClass [main] BodyObject@279ad2e3
 2021-10-18 16:03:01,979 DEBUG c.s.l.MainClass [main] frontWheel
-2021-10-18 16:03:01,979 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@4450d156
+2021-10-18 16:03:01,979 DEBUG c.s.l.MainClass [main] BodyObject@4450d156
 2021-10-18 16:03:01,979 DEBUG c.s.l.MainClass [main] frontTire
-2021-10-18 16:03:01,980 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@4450d156
+2021-10-18 16:03:01,980 DEBUG c.s.l.MainClass [main] BodyObject@4450d156
 2021-10-18 16:03:01,980 INFO c.s.l.MainClass [main] kar mikone !!
 2021-10-18 16:11:15,742 DEBUG c.s.l.MainClass [main] Wagon number 1: 
 2021-10-18 16:11:15,749 DEBUG c.s.l.Wagon [main] Wagon Name is: Wagon, Wagon Id is: 1
@@ -111,24 +111,24 @@
 2021-10-18 16:11:15,791 DEBUG c.s.l.MainClass [main] Policeman: 
 2021-10-18 16:11:15,792 DEBUG c.s.l.MainClass [main] Police ID is: 1 and Police name is: Policeman 0
 2021-10-18 16:11:15,792 DEBUG c.s.l.MainClass [main] CarDriver{age=27, name='null', surname='null', hairColor='Purple', eyeColor='Purple', height=0, weight=0, job='null'}
-2021-10-18 16:11:15,794 DEBUG c.s.l.MainClass [main] com.soldv.metro.Store@78a2da20
+2021-10-18 16:11:15,794 DEBUG c.s.l.MainClass [main] Store@78a2da20
 2021-10-18 16:11:15,796 DEBUG c.s.l.MainClass [main] [Interior, Exterior, Full]
 2021-10-18 16:11:15,796 DEBUG c.s.l.MainClass [main] [Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=21, offRoad=true}, Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=19, offRoad=true}]
 2021-10-18 16:11:15,797 DEBUG c.s.l.MainClass [main] Change oil
-2021-10-18 16:11:15,797 DEBUG c.s.l.MainClass [main] The Mappings are: {speaker=com.soldv.metro.AudioObject@dd3b207}
+2021-10-18 16:11:15,797 DEBUG c.s.l.MainClass [main] The Mappings are: {speaker=AudioObject@dd3b207}
 2021-10-18 16:11:15,798 DEBUG c.s.l.MainClass [main] Is the map empty? false
 2021-10-18 16:11:15,798 DEBUG c.s.l.MainClass [main] frontSpoiler
-2021-10-18 16:11:15,798 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@551bdc27
+2021-10-18 16:11:15,798 DEBUG c.s.l.MainClass [main] BodyObject@551bdc27
 2021-10-18 16:11:15,799 DEBUG c.s.l.MainClass [main] rearTire
-2021-10-18 16:11:15,799 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@58fdd99
+2021-10-18 16:11:15,799 DEBUG c.s.l.MainClass [main] BodyObject@58fdd99
 2021-10-18 16:11:15,799 DEBUG c.s.l.MainClass [main] rearSpoiler
-2021-10-18 16:11:15,799 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@6b1274d2
+2021-10-18 16:11:15,799 DEBUG c.s.l.MainClass [main] BodyObject@6b1274d2
 2021-10-18 16:11:15,800 DEBUG c.s.l.MainClass [main] rearWheel
-2021-10-18 16:11:15,800 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@58fdd99
+2021-10-18 16:11:15,800 DEBUG c.s.l.MainClass [main] BodyObject@58fdd99
 2021-10-18 16:11:15,800 DEBUG c.s.l.MainClass [main] frontWheel
-2021-10-18 16:11:15,800 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@7bc1a03d
+2021-10-18 16:11:15,800 DEBUG c.s.l.MainClass [main] BodyObject@7bc1a03d
 2021-10-18 16:11:15,801 DEBUG c.s.l.MainClass [main] frontTire
-2021-10-18 16:11:15,801 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@7bc1a03d
+2021-10-18 16:11:15,801 DEBUG c.s.l.MainClass [main] BodyObject@7bc1a03d
 2021-10-26 13:02:45,363 DEBUG c.s.m.MainClass [main] Wagon number 1: 
 2021-10-26 13:02:45,375 DEBUG c.s.m.Wagon [main] Wagon Name is: Wagon, Wagon Id is: 1
 2021-10-26 13:02:45,379 DEBUG c.s.m.MainClass [main] Wagon n3
@@ -154,24 +154,24 @@
 2021-10-26 13:02:45,480 DEBUG c.s.m.MainClass [main] Policeman: 
 2021-10-26 13:02:45,481 DEBUG c.s.m.MainClass [main] Police ID is: 1 and Police name is: Policeman 0
 2021-10-26 13:02:45,482 DEBUG c.s.m.MainClass [main] CarDriver{age=27, name='null', surname='null', hairColor='Purple', eyeColor='Purple', height=0, weight=0, job='null'}
-2021-10-26 13:02:45,484 DEBUG c.s.m.MainClass [main] com.soldv.metro.Store@78a2da20
+2021-10-26 13:02:45,484 DEBUG c.s.m.MainClass [main] Store@78a2da20
 2021-10-26 13:02:45,486 DEBUG c.s.m.MainClass [main] [Interior, Exterior, Full]
 2021-10-26 13:02:45,487 DEBUG c.s.m.MainClass [main] [Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=21, offRoad=true}, Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=19, offRoad=true}]
 2021-10-26 13:02:45,488 DEBUG c.s.m.MainClass [main] Change oil
-2021-10-26 13:02:45,490 DEBUG c.s.m.MainClass [main] The Mappings are: {speaker=com.soldv.metro.AudioObject@dd3b207}
+2021-10-26 13:02:45,490 DEBUG c.s.m.MainClass [main] The Mappings are: {speaker=AudioObject@dd3b207}
 2021-10-26 13:02:45,490 DEBUG c.s.m.MainClass [main] Is the map empty? false
 2021-10-26 13:02:45,491 DEBUG c.s.m.MainClass [main] frontSpoiler
-2021-10-26 13:02:45,512 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@551bdc27
+2021-10-26 13:02:45,512 DEBUG c.s.m.MainClass [main] BodyObject@551bdc27
 2021-10-26 13:02:45,516 DEBUG c.s.m.MainClass [main] rearTire
-2021-10-26 13:02:45,517 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@58fdd99
+2021-10-26 13:02:45,517 DEBUG c.s.m.MainClass [main] BodyObject@58fdd99
 2021-10-26 13:02:45,517 DEBUG c.s.m.MainClass [main] rearSpoiler
-2021-10-26 13:02:45,518 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@6b1274d2
+2021-10-26 13:02:45,518 DEBUG c.s.m.MainClass [main] BodyObject@6b1274d2
 2021-10-26 13:02:45,522 DEBUG c.s.m.MainClass [main] rearWheel
-2021-10-26 13:02:45,523 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@58fdd99
+2021-10-26 13:02:45,523 DEBUG c.s.m.MainClass [main] BodyObject@58fdd99
 2021-10-26 13:02:45,531 DEBUG c.s.m.MainClass [main] frontWheel
-2021-10-26 13:02:45,537 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@7bc1a03d
+2021-10-26 13:02:45,537 DEBUG c.s.m.MainClass [main] BodyObject@7bc1a03d
 2021-10-26 13:02:45,538 DEBUG c.s.m.MainClass [main] frontTire
-2021-10-26 13:02:45,539 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@7bc1a03d
+2021-10-26 13:02:45,539 DEBUG c.s.m.MainClass [main] BodyObject@7bc1a03d
 2021-10-26 13:07:12,278 DEBUG c.s.m.MainClass [main] Wagon number 1: 
 2021-10-26 13:07:12,284 DEBUG c.s.m.Wagon [main] Wagon Name is: Wagon, Wagon Id is: 1
 2021-10-26 13:07:12,287 DEBUG c.s.m.MainClass [main] Wagon n3
@@ -197,21 +197,21 @@
 2021-10-26 13:07:12,325 DEBUG c.s.m.MainClass [main] Policeman: 
 2021-10-26 13:07:12,325 DEBUG c.s.m.MainClass [main] Police ID is: 1 and Police name is: Policeman 0
 2021-10-26 13:07:12,326 DEBUG c.s.m.MainClass [main] CarDriver{age=27, name='null', surname='null', hairColor='Purple', eyeColor='Purple', height=0, weight=0, job='null'}
-2021-10-26 13:07:12,329 DEBUG c.s.m.MainClass [main] com.soldv.metro.Store@221af3c0
+2021-10-26 13:07:12,329 DEBUG c.s.m.MainClass [main] Store@221af3c0
 2021-10-26 13:07:12,331 DEBUG c.s.m.MainClass [main] [Interior, Exterior, Full]
 2021-10-26 13:07:12,331 DEBUG c.s.m.MainClass [main] [Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=21, offRoad=true}, Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=19, offRoad=true}]
 2021-10-26 13:07:12,332 DEBUG c.s.m.MainClass [main] Change oil
-2021-10-26 13:07:12,332 DEBUG c.s.m.MainClass [main] The Mappings are: {speaker=com.soldv.metro.AudioObject@62bd765}
+2021-10-26 13:07:12,332 DEBUG c.s.m.MainClass [main] The Mappings are: {speaker=AudioObject@62bd765}
 2021-10-26 13:07:12,332 DEBUG c.s.m.MainClass [main] Is the map empty? false
 2021-10-26 13:07:12,333 DEBUG c.s.m.MainClass [main] frontSpoiler
-2021-10-26 13:07:12,333 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@23a5fd2
+2021-10-26 13:07:12,333 DEBUG c.s.m.MainClass [main] BodyObject@23a5fd2
 2021-10-26 13:07:12,333 DEBUG c.s.m.MainClass [main] rearTire
-2021-10-26 13:07:12,333 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@78a2da20
+2021-10-26 13:07:12,333 DEBUG c.s.m.MainClass [main] BodyObject@78a2da20
 2021-10-26 13:07:12,333 DEBUG c.s.m.MainClass [main] rearSpoiler
-2021-10-26 13:07:12,334 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@dd3b207
+2021-10-26 13:07:12,334 DEBUG c.s.m.MainClass [main] BodyObject@dd3b207
 2021-10-26 13:07:12,334 DEBUG c.s.m.MainClass [main] rearWheel
-2021-10-26 13:07:12,334 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@78a2da20
+2021-10-26 13:07:12,334 DEBUG c.s.m.MainClass [main] BodyObject@78a2da20
 2021-10-26 13:07:12,334 DEBUG c.s.m.MainClass [main] frontWheel
-2021-10-26 13:07:12,334 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@551bdc27
+2021-10-26 13:07:12,334 DEBUG c.s.m.MainClass [main] BodyObject@551bdc27
 2021-10-26 13:07:12,335 DEBUG c.s.m.MainClass [main] frontTire
-2021-10-26 13:07:12,335 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@551bdc27
+2021-10-26 13:07:12,335 DEBUG c.s.m.MainClass [main] BodyObject@551bdc27

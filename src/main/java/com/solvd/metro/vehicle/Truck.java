@@ -1,8 +1,8 @@
-package com.soldv.metro.vehicle;
+package com.solvd.metro.vehicle;
 
-import com.soldv.metro.MainClass;
-import com.soldv.metro.Refuelable;
-import com.soldv.metro.person.Person;
+import com.solvd.metro.MainClass;
+import com.solvd.metro.Refuelable;
+import com.solvd.metro.person.Person;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -17,7 +17,7 @@ public class Truck extends Car implements Refuelable {
     private int height;
 
     public Truck(int size, String color, LocalDateTime creationDate, Person driver, String brand, String model,
-            int door, int compartment, int passengers, String type, int height) {
+                 int door, int compartment, int passengers, String type, int height) {
         super(size, color, creationDate, driver, brand, model, door, compartment, passengers, false);
         this.type = type;
         this.height = height;

@@ -1,4 +1,4 @@
-package com.soldv.metro;
+package com.solvd.metro;
 
 public class BodyObject extends CarObject {
 

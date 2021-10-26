@@ -1,6 +1,6 @@
-package com.soldv.metro.person;
+package com.solvd.metro.person;
 
-import com.soldv.metro.InvalidException;
+import com.solvd.metro.InvalidException;
 
 import java.util.Objects;
 

@@ -1,7 +1,8 @@
-package com.soldv.metro;
+package com.solvd.metro;
 
-import com.soldv.metro.person.*;
-import com.soldv.metro.vehicle.*;
+import com.solvd.metro.person.*;
+import com.solvd.metro.vehicle.Metro;
+import com.solvd.metro.vehicle.Suv;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

@@ -1,6 +1,6 @@
-package com.soldv.metro;
+package com.solvd.metro;
 
-import com.soldv.metro.vehicle.Car;
+import com.solvd.metro.vehicle.Car;
 
 import java.util.List;
 
