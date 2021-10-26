@@ -129,3 +129,46 @@
 2021-10-18 16:11:15,800 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@7bc1a03d
 2021-10-18 16:11:15,801 DEBUG c.s.l.MainClass [main] frontTire
 2021-10-18 16:11:15,801 DEBUG c.s.l.MainClass [main] com.soldv.metro.BodyObject@7bc1a03d
+2021-10-26 13:02:45,363 DEBUG c.s.m.MainClass [main] Wagon number 1: 
+2021-10-26 13:02:45,375 DEBUG c.s.m.Wagon [main] Wagon Name is: Wagon, Wagon Id is: 1
+2021-10-26 13:02:45,379 DEBUG c.s.m.MainClass [main] Wagon n3
+2021-10-26 13:02:45,380 DEBUG c.s.m.MainClass [main] Andy
+2021-10-26 13:02:45,380 DEBUG c.s.m.MainClass [main] TicketCounter{surname='Jackson', eyeColor='Red', job='new job'}
+2021-10-26 13:02:45,381 DEBUG c.s.m.MainClass [main] Police{hairColor='Black'}
+2021-10-26 13:02:45,446 DEBUG c.s.m.MainClass [main] true
+2021-10-26 13:02:45,447 DEBUG c.s.m.MainClass [main] 2843
+2021-10-26 13:02:45,448 DEBUG c.s.m.v.Suv [main] The fuel tank is opened.
+2021-10-26 13:02:45,449 DEBUG c.s.m.v.Suv [main] car is refueling...
+2021-10-26 13:02:45,450 DEBUG c.s.m.v.Suv [main] The fuel tank is closed.
+2021-10-26 13:02:45,450 DEBUG c.s.m.MainClass [main] [Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=21, offRoad=true}, Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=19, offRoad=true}]
+2021-10-26 13:02:45,452 DEBUG c.s.m.MainClass [main] false
+2021-10-26 13:02:45,455 DEBUG c.s.m.MainClass [main] 2023-09-10T00:00
+2021-10-26 13:02:45,456 DEBUG c.s.m.MainClass [main] Passenger{age=44, name='null', surname='null'}
+2021-10-26 13:02:45,457 DEBUG c.s.m.MainClass [main] Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=21, offRoad=true}
+2021-10-26 13:02:45,459 DEBUG c.s.m.MainClass [main] [Lcom.soldv.metro.person.Police;@23a5fd2
+2021-10-26 13:02:45,460 DEBUG c.s.m.MainClass [main] [Lcom.soldv.metro.person.Police;@23a5fd2
+2021-10-26 13:02:45,460 DEBUG c.s.m.MainClass [main] [Lcom.soldv.metro.person.Police;@23a5fd2
+2021-10-26 13:02:45,461 DEBUG c.s.m.MainClass [main] [Lcom.soldv.metro.person.Police;@23a5fd2
+2021-10-26 13:02:45,475 DEBUG c.s.m.MainClass [main] [Lcom.soldv.metro.person.Police;@23a5fd2
+2021-10-26 13:02:45,476 DEBUG c.s.m.MainClass [main] [Lcom.soldv.metro.person.Police;@23a5fd2
+2021-10-26 13:02:45,480 DEBUG c.s.m.MainClass [main] Policeman: 
+2021-10-26 13:02:45,481 DEBUG c.s.m.MainClass [main] Police ID is: 1 and Police name is: Policeman 0
+2021-10-26 13:02:45,482 DEBUG c.s.m.MainClass [main] CarDriver{age=27, name='null', surname='null', hairColor='Purple', eyeColor='Purple', height=0, weight=0, job='null'}
+2021-10-26 13:02:45,484 DEBUG c.s.m.MainClass [main] com.soldv.metro.Store@78a2da20
+2021-10-26 13:02:45,486 DEBUG c.s.m.MainClass [main] [Interior, Exterior, Full]
+2021-10-26 13:02:45,487 DEBUG c.s.m.MainClass [main] [Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=21, offRoad=true}, Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=19, offRoad=true}]
+2021-10-26 13:02:45,488 DEBUG c.s.m.MainClass [main] Change oil
+2021-10-26 13:02:45,490 DEBUG c.s.m.MainClass [main] The Mappings are: {speaker=com.soldv.metro.AudioObject@dd3b207}
+2021-10-26 13:02:45,490 DEBUG c.s.m.MainClass [main] Is the map empty? false
+2021-10-26 13:02:45,491 DEBUG c.s.m.MainClass [main] frontSpoiler
+2021-10-26 13:02:45,512 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@551bdc27
+2021-10-26 13:02:45,516 DEBUG c.s.m.MainClass [main] rearTire
+2021-10-26 13:02:45,517 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@58fdd99
+2021-10-26 13:02:45,517 DEBUG c.s.m.MainClass [main] rearSpoiler
+2021-10-26 13:02:45,518 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@6b1274d2
+2021-10-26 13:02:45,522 DEBUG c.s.m.MainClass [main] rearWheel
+2021-10-26 13:02:45,523 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@58fdd99
+2021-10-26 13:02:45,531 DEBUG c.s.m.MainClass [main] frontWheel
+2021-10-26 13:02:45,537 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@7bc1a03d
+2021-10-26 13:02:45,538 DEBUG c.s.m.MainClass [main] frontTire
+2021-10-26 13:02:45,539 DEBUG c.s.m.MainClass [main] com.soldv.metro.BodyObject@7bc1a03d
