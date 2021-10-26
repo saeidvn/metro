@@ -188,7 +188,5 @@ public class MainClass {
             LOGGER.debug(entry.getValue());
         }
 
-        LOGGER.debug("conflict test");
-
     }
 }
