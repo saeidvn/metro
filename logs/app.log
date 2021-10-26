@@ -1,0 +1,131 @@
+2021-10-18 16:02:46,288 DEBUG c.s.l.MainClass [main] Wagon number 1: 
+2021-10-18 16:02:46,300 DEBUG c.s.l.Wagon [main] Wagon Name is: Wagon, Wagon Id is: 1
+2021-10-18 16:02:46,304 DEBUG c.s.l.MainClass [main] Wagon n3
+2021-10-18 16:02:46,305 DEBUG c.s.l.MainClass [main] Andy
+2021-10-18 16:02:46,305 DEBUG c.s.l.MainClass [main] TicketCounter{surname='Jackson', eyeColor='Red', job='new job'}
+2021-10-18 16:02:46,307 DEBUG c.s.l.MainClass [main] Police{hairColor='Black'}
+2021-10-18 16:02:46,340 DEBUG c.s.l.MainClass [main] true
+2021-10-18 16:02:46,341 DEBUG c.s.l.MainClass [main] 2843
+2021-10-18 16:02:46,341 DEBUG c.s.l.v.Suv [main] The fuel tank is opened.
+2021-10-18 16:02:46,342 DEBUG c.s.l.v.Suv [main] car is refueling...
+2021-10-18 16:02:46,342 DEBUG c.s.l.v.Suv [main] The fuel tank is closed.
+2021-10-18 16:02:46,343 DEBUG c.s.l.MainClass [main] [Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=21, offRoad=true}, Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=19, offRoad=true}]
+2021-10-18 16:02:46,343 DEBUG c.s.l.MainClass [main] false
+2021-10-18 16:02:46,345 DEBUG c.s.l.MainClass [main] 2023-09-10T00:00
+2021-10-18 16:02:46,345 DEBUG c.s.l.MainClass [main] Passenger{age=44, name='null', surname='null'}
+2021-10-18 16:02:46,346 DEBUG c.s.l.MainClass [main] Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=21, offRoad=true}
+2021-10-18 16:02:46,352 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@23a5fd2
+2021-10-18 16:02:46,353 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@23a5fd2
+2021-10-18 16:02:46,353 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@23a5fd2
+2021-10-18 16:02:46,354 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@23a5fd2
+2021-10-18 16:02:46,354 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@23a5fd2
+2021-10-18 16:02:46,354 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@23a5fd2
+2021-10-18 16:02:46,355 DEBUG c.s.l.MainClass [main] Policeman: 
+2021-10-18 16:02:46,355 DEBUG c.s.l.MainClass [main] Police ID is: 1 and Police name is: Policeman 0
+2021-10-18 16:02:46,356 DEBUG c.s.l.MainClass [main] CarDriver{age=27, name='null', surname='null', hairColor='Purple', eyeColor='Purple', height=0, weight=0, job='null'}
+2021-10-18 16:02:46,358 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.Store@78a2da20
+2021-10-18 16:02:46,359 DEBUG c.s.l.MainClass [main] [Interior, Exterior, Full]
+2021-10-18 16:02:46,359 DEBUG c.s.l.MainClass [main] [Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=21, offRoad=true}, Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=19, offRoad=true}]
+2021-10-18 16:02:46,360 DEBUG c.s.l.MainClass [main] Change oil
+2021-10-18 16:02:46,360 DEBUG c.s.l.MainClass [main] The Mappings are: {speaker=com.soldv.lesson7.AudioObject@dd3b207}
+2021-10-18 16:02:46,361 DEBUG c.s.l.MainClass [main] Is the map empty? false
+2021-10-18 16:02:46,361 DEBUG c.s.l.MainClass [main] frontSpoiler
+2021-10-18 16:02:46,361 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@551bdc27
+2021-10-18 16:02:46,362 DEBUG c.s.l.MainClass [main] rearTire
+2021-10-18 16:02:46,362 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@58fdd99
+2021-10-18 16:02:46,363 DEBUG c.s.l.MainClass [main] rearSpoiler
+2021-10-18 16:02:46,363 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@6b1274d2
+2021-10-18 16:02:46,363 DEBUG c.s.l.MainClass [main] rearWheel
+2021-10-18 16:02:46,363 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@58fdd99
+2021-10-18 16:02:46,363 DEBUG c.s.l.MainClass [main] frontWheel
+2021-10-18 16:02:46,364 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@7bc1a03d
+2021-10-18 16:02:46,364 DEBUG c.s.l.MainClass [main] frontTire
+2021-10-18 16:02:46,364 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@7bc1a03d
+2021-10-18 16:02:46,365 INFO c.s.l.MainClass [main] kar mikone !!
+2021-10-18 16:03:01,913 DEBUG c.s.l.MainClass [main] Wagon number 1: 
+2021-10-18 16:03:01,921 DEBUG c.s.l.Wagon [main] Wagon Name is: Wagon, Wagon Id is: 1
+2021-10-18 16:03:01,925 DEBUG c.s.l.MainClass [main] Wagon n3
+2021-10-18 16:03:01,926 DEBUG c.s.l.MainClass [main] Andy
+2021-10-18 16:03:01,926 DEBUG c.s.l.MainClass [main] TicketCounter{surname='Jackson', eyeColor='Red', job='new job'}
+2021-10-18 16:03:01,926 DEBUG c.s.l.MainClass [main] Police{hairColor='Black'}
+2021-10-18 16:03:01,961 DEBUG c.s.l.MainClass [main] true
+2021-10-18 16:03:01,962 DEBUG c.s.l.MainClass [main] 2843
+2021-10-18 16:03:01,962 DEBUG c.s.l.v.Suv [main] The fuel tank is opened.
+2021-10-18 16:03:01,962 DEBUG c.s.l.v.Suv [main] car is refueling...
+2021-10-18 16:03:01,963 DEBUG c.s.l.v.Suv [main] The fuel tank is closed.
+2021-10-18 16:03:01,963 DEBUG c.s.l.MainClass [main] [Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=21, offRoad=true}, Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=19, offRoad=true}]
+2021-10-18 16:03:01,963 DEBUG c.s.l.MainClass [main] false
+2021-10-18 16:03:01,965 DEBUG c.s.l.MainClass [main] 2023-09-10T00:00
+2021-10-18 16:03:01,966 DEBUG c.s.l.MainClass [main] Passenger{age=44, name='null', surname='null'}
+2021-10-18 16:03:01,966 DEBUG c.s.l.MainClass [main] Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=21, offRoad=true}
+2021-10-18 16:03:01,967 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@6591f517
+2021-10-18 16:03:01,967 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@6591f517
+2021-10-18 16:03:01,967 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@6591f517
+2021-10-18 16:03:01,968 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@6591f517
+2021-10-18 16:03:01,968 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@6591f517
+2021-10-18 16:03:01,968 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@6591f517
+2021-10-18 16:03:01,969 DEBUG c.s.l.MainClass [main] Policeman: 
+2021-10-18 16:03:01,969 DEBUG c.s.l.MainClass [main] Police ID is: 1 and Police name is: Policeman 0
+2021-10-18 16:03:01,969 DEBUG c.s.l.MainClass [main] CarDriver{age=27, name='null', surname='null', hairColor='Purple', eyeColor='Purple', height=0, weight=0, job='null'}
+2021-10-18 16:03:01,973 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.Store@345965f2
+2021-10-18 16:03:01,974 DEBUG c.s.l.MainClass [main] [Interior, Exterior, Full]
+2021-10-18 16:03:01,974 DEBUG c.s.l.MainClass [main] [Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=21, offRoad=true}, Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=19, offRoad=true}]
+2021-10-18 16:03:01,975 DEBUG c.s.l.MainClass [main] Change oil
+2021-10-18 16:03:01,976 DEBUG c.s.l.MainClass [main] The Mappings are: {speaker=com.soldv.lesson7.AudioObject@429bd883}
+2021-10-18 16:03:01,976 DEBUG c.s.l.MainClass [main] Is the map empty? false
+2021-10-18 16:03:01,977 DEBUG c.s.l.MainClass [main] frontSpoiler
+2021-10-18 16:03:01,977 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@4d49af10
+2021-10-18 16:03:01,977 DEBUG c.s.l.MainClass [main] rearTire
+2021-10-18 16:03:01,978 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@279ad2e3
+2021-10-18 16:03:01,978 DEBUG c.s.l.MainClass [main] rearSpoiler
+2021-10-18 16:03:01,978 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@58134517
+2021-10-18 16:03:01,978 DEBUG c.s.l.MainClass [main] rearWheel
+2021-10-18 16:03:01,979 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@279ad2e3
+2021-10-18 16:03:01,979 DEBUG c.s.l.MainClass [main] frontWheel
+2021-10-18 16:03:01,979 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@4450d156
+2021-10-18 16:03:01,979 DEBUG c.s.l.MainClass [main] frontTire
+2021-10-18 16:03:01,980 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@4450d156
+2021-10-18 16:03:01,980 INFO c.s.l.MainClass [main] kar mikone !!
+2021-10-18 16:11:15,742 DEBUG c.s.l.MainClass [main] Wagon number 1: 
+2021-10-18 16:11:15,749 DEBUG c.s.l.Wagon [main] Wagon Name is: Wagon, Wagon Id is: 1
+2021-10-18 16:11:15,752 DEBUG c.s.l.MainClass [main] Wagon n3
+2021-10-18 16:11:15,752 DEBUG c.s.l.MainClass [main] Andy
+2021-10-18 16:11:15,753 DEBUG c.s.l.MainClass [main] TicketCounter{surname='Jackson', eyeColor='Red', job='new job'}
+2021-10-18 16:11:15,753 DEBUG c.s.l.MainClass [main] Police{hairColor='Black'}
+2021-10-18 16:11:15,782 DEBUG c.s.l.MainClass [main] true
+2021-10-18 16:11:15,783 DEBUG c.s.l.MainClass [main] 2843
+2021-10-18 16:11:15,783 DEBUG c.s.l.v.Suv [main] The fuel tank is opened.
+2021-10-18 16:11:15,784 DEBUG c.s.l.v.Suv [main] car is refueling...
+2021-10-18 16:11:15,784 DEBUG c.s.l.v.Suv [main] The fuel tank is closed.
+2021-10-18 16:11:15,785 DEBUG c.s.l.MainClass [main] [Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=21, offRoad=true}, Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=19, offRoad=true}]
+2021-10-18 16:11:15,785 DEBUG c.s.l.MainClass [main] false
+2021-10-18 16:11:15,787 DEBUG c.s.l.MainClass [main] 2023-09-10T00:00
+2021-10-18 16:11:15,787 DEBUG c.s.l.MainClass [main] Passenger{age=44, name='null', surname='null'}
+2021-10-18 16:11:15,788 DEBUG c.s.l.MainClass [main] Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=21, offRoad=true}
+2021-10-18 16:11:15,788 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@23a5fd2
+2021-10-18 16:11:15,789 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@23a5fd2
+2021-10-18 16:11:15,789 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@23a5fd2
+2021-10-18 16:11:15,790 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@23a5fd2
+2021-10-18 16:11:15,790 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@23a5fd2
+2021-10-18 16:11:15,790 DEBUG c.s.l.MainClass [main] [Lcom.soldv.lesson7.person.Police;@23a5fd2
+2021-10-18 16:11:15,791 DEBUG c.s.l.MainClass [main] Policeman: 
+2021-10-18 16:11:15,792 DEBUG c.s.l.MainClass [main] Police ID is: 1 and Police name is: Policeman 0
+2021-10-18 16:11:15,792 DEBUG c.s.l.MainClass [main] CarDriver{age=27, name='null', surname='null', hairColor='Purple', eyeColor='Purple', height=0, weight=0, job='null'}
+2021-10-18 16:11:15,794 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.Store@78a2da20
+2021-10-18 16:11:15,796 DEBUG c.s.l.MainClass [main] [Interior, Exterior, Full]
+2021-10-18 16:11:15,796 DEBUG c.s.l.MainClass [main] [Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=21, offRoad=true}, Suv{engineVolume=0, cylinders=0, speed=0, gear=0, tireSize=19, offRoad=true}]
+2021-10-18 16:11:15,797 DEBUG c.s.l.MainClass [main] Change oil
+2021-10-18 16:11:15,797 DEBUG c.s.l.MainClass [main] The Mappings are: {speaker=com.soldv.lesson7.AudioObject@dd3b207}
+2021-10-18 16:11:15,798 DEBUG c.s.l.MainClass [main] Is the map empty? false
+2021-10-18 16:11:15,798 DEBUG c.s.l.MainClass [main] frontSpoiler
+2021-10-18 16:11:15,798 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@551bdc27
+2021-10-18 16:11:15,799 DEBUG c.s.l.MainClass [main] rearTire
+2021-10-18 16:11:15,799 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@58fdd99
+2021-10-18 16:11:15,799 DEBUG c.s.l.MainClass [main] rearSpoiler
+2021-10-18 16:11:15,799 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@6b1274d2
+2021-10-18 16:11:15,800 DEBUG c.s.l.MainClass [main] rearWheel
+2021-10-18 16:11:15,800 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@58fdd99
+2021-10-18 16:11:15,800 DEBUG c.s.l.MainClass [main] frontWheel
+2021-10-18 16:11:15,800 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@7bc1a03d
+2021-10-18 16:11:15,801 DEBUG c.s.l.MainClass [main] frontTire
+2021-10-18 16:11:15,801 DEBUG c.s.l.MainClass [main] com.soldv.lesson7.BodyObject@7bc1a03d
