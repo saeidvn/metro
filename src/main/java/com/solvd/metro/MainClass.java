@@ -1,28 +1,30 @@
 package com.solvd.metro;
 
+import com.solvd.metro.connection.Connection;
+import com.solvd.metro.connection.ConnectionPool;
+import com.solvd.metro.connection.ConnectionTask;
+import com.solvd.metro.metro.MetroStation;
+import com.solvd.metro.metro.SecurityGate;
+import com.solvd.metro.metro.Ticket;
+import com.solvd.metro.metro.Wagon;
 import com.solvd.metro.person.*;
-import com.solvd.metro.vehicle.Metro;
-import com.solvd.metro.vehicle.Sedan;
-import com.solvd.metro.vehicle.Suv;
-//import com.sun.xml.internal.ws.util.StringUtils;
-import com.sun.org.apache.xml.internal.utils.StringToIntTable;
-import jdk.internal.org.objectweb.asm.Type;
+import com.solvd.metro.vehicle.*;
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang3.ArrayUtils;
-import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.xml.soap.Text;
-import java.io.*;
+import java.io.File;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.FileSystemNotFoundException;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.time.LocalDateTime;
 import java.util.*;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.function.Function;
 import java.util.stream.*;
 
 public class MainClass {
@@ -43,7 +45,6 @@ public class MainClass {
 
         List<String> gateList = new ArrayList<>();
         SecurityGate securityGate1 = new SecurityGate(1);
-
 
         MetroDriver metroDriver1 = new MetroDriver(45,
                 "Black", "Brown");
@@ -204,17 +205,11 @@ public class MainClass {
         LOGGER.debug(String.format("The Mappings are: %s", audioObjects));
         LOGGER.debug(String.format("Is the map empty? %s", audioObjects.isEmpty()));
 
-//        for (Map.Entry<String, BodyObject> entry : objects.entrySet()) {
-//            LOGGER.debug(entry.getKey());
-//            LOGGER.debug(entry.getValue());
-//
-//        }
-
         objects.entrySet().stream().forEach((entry) -> {
 
             LOGGER.debug(entry.getKey());
             LOGGER.debug(entry.getValue());
-            });
+        });
 
         Police police = new Police(2, "Tom", Police.Type.FEDERAL);
         police.setType(Police.Type.DETECTIVE);
@@ -302,12 +297,7 @@ public class MainClass {
 
 
         File textFile = new File("/home/sa/Downloads/NightTrain.txt");
-//        try {
-//            List<String> lines = FileUtils.readLines(textFile, StandardCharsets.UTF_8);
-//            lines.forEach(System.out::println);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+
         String text = FileUtils.readFileToString(textFile, "UTF-8");
         text = text.toLowerCase(Locale.ROOT);
         text = text.replaceAll("[^a-z0-9]", " ");
@@ -316,13 +306,6 @@ public class MainClass {
 
         List<String> textList = new ArrayList<>(Arrays.asList(StringUtils.split(text)));
         Map<String, Integer> textMap = new HashMap<>();
-//        for (String word : textList) {
-//            if (textMap.containsKey(word)) {
-//                textMap.put(word, textMap.get(word) + 1);
-//            } else {
-//                textMap.put(word, 1);
-//            }
-//        }
 
         textList.stream().forEach((word) -> {
             if (textMap.containsKey(word)) {
@@ -332,18 +315,66 @@ public class MainClass {
             }
         });
 
-//        textMap.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue().reversed()).
-//                forEach(System.out::println);
-
-        ExecutorService executorService = Executors.newFixedThreadPool(5);
+        ExecutorService executorService = Executors.newFixedThreadPool(600);
         ConnectionPool connectionPool = ConnectionPool.getInstance(5);
 
-//        ConnectionTask connectionTask = new ConnectionTask();
-        Thread thread = new Thread(new ConnectionTask(connectionPool));
-        thread.start();
+        IntStream.range(0, 10).boxed()
+                .forEach(index -> {
+                    executorService.execute(new ConnectionTask(connectionPool));
+                });
+
+        try {
+            Connection newConnection = connectionPool.getConnection();
+
+            CompletableFuture.runAsync(() -> {
+                newConnection.create();
+            }, executorService).thenRunAsync(() -> {
+                newConnection.read();
+                newConnection.update();
+                newConnection.delete();
+
+                connectionPool.releaseConnection(newConnection);
+            }, executorService).get();
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
+        }
+
+        executorService.shutdown();
+
+
+        AudioObject pioneerAudioObject = new AudioObject(AudioObject.Model.PIONEER);
+        Function<AudioObject, String> getAudioObjectModel = audioObject4 -> {
+            return audioObject4.getModel().toString();
+        };
+
+        LOGGER.debug(getAudioObjectModel.apply(pioneerAudioObject));
+
+        try {
+            Class<BodyObject> bodyObjectClass = BodyObject.class;
+            Constructor<BodyObject> bodyObjectConstructor = bodyObjectClass.getConstructor();
+            BodyObject bodyObject = bodyObjectClass.newInstance();
+
+            Field colorField = bodyObject.getClass().getDeclaredField("color");
+            colorField.setAccessible(true);
+            colorField.set(bodyObject, "black");
+
+            Field manufactureField = bodyObject.getClass().getDeclaredField("manufacture");
+            manufactureField.setAccessible(true);
+            manufactureField.set(bodyObject, "Japan");
+
+            LOGGER.debug(bodyObject.getColor());
+            LOGGER.debug(bodyObject.getManufacture());
+
+        } catch (NoSuchMethodException
+                | SecurityException
+                | InstantiationException
+                | IllegalAccessException
+                | NoSuchFieldException e) {
+            e.printStackTrace();
+        }
 
         Stream.iterate(0, n -> n + 1)
-                .filter(x -> x % 2 == 0) //even
+                .filter(x -> x % 2 == 0)
                 .limit(10)
                 .forEach(x -> LOGGER.debug(x));
 

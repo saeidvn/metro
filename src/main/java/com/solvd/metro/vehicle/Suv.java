@@ -1,8 +1,5 @@
 package com.solvd.metro.vehicle;
 
-import com.solvd.metro.IEngine;
-import com.solvd.metro.ISportCar;
-import com.solvd.metro.Refuelable;
 import com.solvd.metro.person.Person;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

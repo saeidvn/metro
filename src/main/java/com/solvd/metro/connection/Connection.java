@@ -1,4 +1,4 @@
-package com.solvd.metro;
+package com.solvd.metro.connection;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,7 +9,7 @@ public class Connection {
 
     public void create() {
         try {
-            System.out.println("Connection is created.");
+            System.out.println(Thread.currentThread().getName() + " created.");
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             LOGGER.debug(e.getMessage());
@@ -18,7 +18,7 @@ public class Connection {
 
     public void read() {
         try {
-            System.out.println("Connection is read.");
+            System.out.println(Thread.currentThread().getName() + " read.");
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             LOGGER.debug(e.getMessage());
@@ -27,7 +27,7 @@ public class Connection {
 
     public void update() {
         try {
-            System.out.println("Connection is updated.");
+            System.out.println(Thread.currentThread().getName() + " updated.");
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             LOGGER.debug(e.getMessage());
@@ -36,7 +36,7 @@ public class Connection {
 
     public void delete() {
         try {
-            System.out.println("Connection is deleted.");
+            System.out.println(Thread.currentThread().getName() + " deleted.");
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             LOGGER.debug(e.getMessage());

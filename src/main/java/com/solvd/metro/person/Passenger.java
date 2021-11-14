@@ -1,7 +1,6 @@
 package com.solvd.metro.person;
 
-import com.solvd.metro.Humanity;
-import com.solvd.metro.Ticket;
+import com.solvd.metro.metro.Ticket;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

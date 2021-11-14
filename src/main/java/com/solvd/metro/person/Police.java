@@ -1,7 +1,6 @@
 package com.solvd.metro.person;
 
 import com.solvd.metro.MainClass;
-import com.solvd.metro.Playable;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import java.util.List;

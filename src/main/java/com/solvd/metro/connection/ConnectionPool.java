@@ -1,6 +1,5 @@
-package com.solvd.metro;
+package com.solvd.metro.connection;
 
-import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.IntStream;
 
@@ -36,7 +35,10 @@ public class ConnectionPool {
         return instance;
     }
 
-    public synchronized Connection getConnection() {
+    public synchronized Connection getConnection() throws InterruptedException {
+        while (this.connections.isEmpty()) {
+            wait();
+        }
         int connectionIndex = this.connections.size() - 1;
         Connection connection = this.connections.get(connectionIndex);
         this.connections.remove(connectionIndex);
@@ -46,6 +48,7 @@ public class ConnectionPool {
     public synchronized void releaseConnection(Connection connection) {
         if (this.connections.size() < this.poolSize) {
             this.connections.add(connection);
+            notify();
         }
     }
 

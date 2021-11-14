@@ -1,4 +1,4 @@
-package com.solvd.metro;
+package com.solvd.metro.metro;
 
 import java.time.LocalDateTime;
 import java.util.Objects;

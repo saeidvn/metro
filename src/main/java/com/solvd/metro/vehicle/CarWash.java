@@ -1,4 +1,4 @@
-package com.solvd.metro;
+package com.solvd.metro.vehicle;
 
 import com.solvd.metro.vehicle.Car;
 

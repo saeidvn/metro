@@ -1,4 +1,4 @@
-package com.solvd.metro;
+package com.solvd.metro.connection;
 
 public class ConnectionResource implements AutoCloseable{
 

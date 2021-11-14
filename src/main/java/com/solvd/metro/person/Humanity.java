@@ -1,4 +1,4 @@
-package com.solvd.metro;
+package com.solvd.metro.person;
 
 public interface Humanity {
 

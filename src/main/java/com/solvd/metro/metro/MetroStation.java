@@ -1,4 +1,4 @@
-package com.solvd.metro;
+package com.solvd.metro.metro;
 
 import com.solvd.metro.person.TicketControl;
 import com.solvd.metro.person.TicketCounter;

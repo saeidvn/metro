@@ -1,6 +1,4 @@
-package com.solvd.metro;
-
-import com.solvd.metro.vehicle.Sedan;
+package com.solvd.metro.vehicle;
 
 public class AudioObject extends CarObject {
 
