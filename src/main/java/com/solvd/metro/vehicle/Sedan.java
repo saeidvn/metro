@@ -4,6 +4,7 @@ import com.solvd.metro.IEngine;
 import com.solvd.metro.ISportCar;
 import com.solvd.metro.Refuelable;
 import com.solvd.metro.person.Person;
+import com.solvd.metro.person.Police;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -19,11 +20,36 @@ public class Sedan extends Car implements Refuelable, IEngine, ISportCar {
     private int speed;
     private int gear;
     private Boolean trunk;
+    private Type type;
 
-    public Sedan(int size, String color, LocalDateTime creationDate, Person driver, String brand, String model,
-                 int door, int compartment, int passengers, Boolean trunk) {
-        super(size, color, creationDate, driver, brand, model, door, compartment, passengers, false);
+    public enum Type {
+
+        HONDA("Honda Civic"), KIA("Kia Forte"), HYUNDAI("Hyundai Accent"), NISSAN("Nissan Versa");
+
+        private final String type;
+
+        Type(String type) {
+            this.type = type;
+        }
+
+        public String getType() {
+            return type;
+        }
+    }
+
+    public Sedan(int size, String color, LocalDateTime creationDate, Person driver,
+                 int door, int compartment, int passengers, Boolean trunk, Type typeOfCar) {
+        super(size, color, creationDate, driver, door, compartment, passengers, false);
         this.trunk = trunk;
+        this.type = typeOfCar;
+    }
+
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
     }
 
     public Boolean getTrunk() {

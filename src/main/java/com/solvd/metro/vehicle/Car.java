@@ -12,17 +12,17 @@ public class Car extends Vehicle implements Refuelable {
 
     private static final Logger LOGGER = LogManager.getLogger(Car.class);
 
-    private String brand;
-    private String model;
+//    private String brand;
+//    private String model;
     private int door;
     private int compartment;
     private int passengers;
     private Boolean offRoad;
 
-    public Car(int size, String color, LocalDateTime creationDate, Person driver, String brand, String model,
+    public Car(int size, String color, LocalDateTime creationDate, Person driver,
                int door, int compartment, int passengers, Boolean offRoad) {
-        this.brand = brand;
-        this.model = model;
+//        this.brand = brand;
+//        this.model = model;
         this.door = door;
         this.compartment = compartment;
         this.passengers = passengers;
@@ -32,22 +32,22 @@ public class Car extends Vehicle implements Refuelable {
     public Boolean isSuv() {
         return this.offRoad == true;
     }
-
-    public String getBrand() {
-        return brand;
-    }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
+//
+//    public String getBrand() {
+//        return brand;
+//    }
+//
+//    public void setBrand(String brand) {
+//        this.brand = brand;
+//    }
+//
+//    public String getModel() {
+//        return model;
+//    }
+//
+//    public void setModel(String model) {
+//        this.model = model;
+//    }
 
     public int getDoor() {
         return door;
@@ -102,8 +102,8 @@ public class Car extends Vehicle implements Refuelable {
     @Override
     public String toString() {
         return "Car{" +
-                "brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
+//                "brand='" + brand + '\'' +
+//                ", model='" + model + '\'' +
                 ", door=" + door +
                 ", compartment=" + compartment +
                 ", passengers=" + passengers +
@@ -114,17 +114,17 @@ public class Car extends Vehicle implements Refuelable {
     public int object(int o1, int o2, int o3) {
         return 0;
     }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Car car = (Car) o;
-        return door == car.door && Objects.equals(brand, car.brand) && Objects.equals(model, car.model);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(brand, model, door, compartment, passengers);
-    }
+//
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        Car car = (Car) o;
+//        return door == car.door && Objects.equals(brand, car.brand) && Objects.equals(model, car.model);
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(brand, model, door, compartment, passengers);
+//    }
 }

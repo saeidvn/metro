@@ -4,22 +4,49 @@ import com.solvd.metro.MainClass;
 import com.solvd.metro.Playable;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.util.List;
 
 public class Police extends Person implements Playable {
 
-    private List<String> officers;
-
     private static final Logger LOGGER = LogManager.getLogger(MainClass.class);
 
+    private Type type;
+    private List<String> officers;
     private int id;
     private String policeName;
 
-    public Police(int policeId, String policeName) {
+    public enum Type {
+
+        DETECTIVE("Detective"),
+        SHERIFF("Sheriff"),
+        FEDERAL("Federal Investigators");
+
+        private final String type;
+
+        Type(String type) {
+            this.type = type;
+        }
+
+        public String getType() {
+            return type;
+        }
+
+    }
+
+    public Police(int policeId, String policeName, Type typesOfPolice) {
         super(0, "Black", "Brown");
         this.id = policeId;
         this.policeName = policeName;
+        this.type = typesOfPolice;
+
+    }
+
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
     }
 
     public List<String> getOfficers() {

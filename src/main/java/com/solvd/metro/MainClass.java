@@ -2,25 +2,36 @@ package com.solvd.metro;
 
 import com.solvd.metro.person.*;
 import com.solvd.metro.vehicle.Metro;
+import com.solvd.metro.vehicle.Sedan;
 import com.solvd.metro.vehicle.Suv;
+//import com.sun.xml.internal.ws.util.StringUtils;
+import com.sun.org.apache.xml.internal.utils.StringToIntTable;
+import jdk.internal.org.objectweb.asm.Type;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.ObjectUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.xml.soap.Text;
+import java.io.*;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.FileSystemNotFoundException;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.stream.*;
 
 public class MainClass {
 
-    static {
-        System.setProperty("log4j.configurationFile", "log4j2.xml");
-    }
-
     private static final Logger LOGGER = LogManager.getLogger(MainClass.class);
 
-    public static void main(String[] args) {
+    static final int MAX_T = 3;
+
+    public static void main(String[] args) throws IOException {
 
         TicketCounter ticketCounter1 = new TicketCounter(21, "Yellow", "Red");
         ticketCounter1.setSurname("Jackson");
@@ -40,19 +51,24 @@ public class MainClass {
         metroDriver1.setName("Andy");
 
         Wagon wagon1 = new Wagon(200, 6);
+        LOGGER.debug(String.format("Wagon1 has %s seats.", wagon1.getSeats()));
 
         List<String> wagonList = new ArrayList<>();
         wagonList.add("Wagon n1");
         wagonList.add("Wagon n2");
         wagonList.add("Wagon n3");
 
+        wagonList.forEach((n) -> {
+            LOGGER.debug(n);
+        });
+
         Wagon[] wagons = new Wagon[6];
-        wagons[0] = new Wagon("Wagon", 01);
-        wagons[1] = new Wagon("Wagon", 02);
-        wagons[2] = new Wagon("Wagon", 03);
-        wagons[3] = new Wagon("Wagon", 04);
-        wagons[4] = new Wagon("Wagon", 05);
-        wagons[5] = new Wagon("Wagon", 06);
+        wagons[0] = new Wagon("Wagon", 1);
+        wagons[1] = new Wagon("Wagon", 2);
+        wagons[2] = new Wagon("Wagon", 3);
+        wagons[3] = new Wagon("Wagon", 4);
+        wagons[4] = new Wagon("Wagon", 5);
+        wagons[5] = new Wagon("Wagon", 6);
 
         LOGGER.debug("Wagon number 1: ");
 
@@ -72,14 +88,14 @@ public class MainClass {
         LOGGER.debug(minsk.getSecurityGate().getPolice().toString());
 
         CarDriver carDriver1 = new CarDriver(30, "Gray", "Gray");
-        Suv suv = new Suv(100, "Purple", LocalDateTime.now(), carDriver1, "BMW",
-                "X6", 5, 2, 21, 5);
+        Suv suv = new Suv(100, "Purple", LocalDateTime.now(), carDriver1, 5,
+                2, 20, 5);
 
         LOGGER.debug(suv.equals(suv));
         LOGGER.debug(suv.hashCode());
 
-        Suv mySuv = new Suv(300, "Gray", LocalDateTime.now(), carDriver1, "Audi",
-                "Q1", 5, 2, 19, 5);
+        Suv mySuv = new Suv(300, "Gray", LocalDateTime.now(), carDriver1, 5,
+                2, 21, 5);
         mySuv.openTheFuelTank();
         mySuv.refuelCar();
         mySuv.closeTheFuelTank();
@@ -101,6 +117,11 @@ public class MainClass {
                 LocalDateTime.of(2023, 9, 10, 0, 0, 0,
                         0), 12));
 
+        for (Police.Type type : Police.Type.values()) {
+
+            LOGGER.debug(type.getType());
+        }
+
         LOGGER.debug(passenger.getTicket().getExpireDate());
         LOGGER.debug(passenger);
         LOGGER.debug(suv);
@@ -113,7 +134,7 @@ public class MainClass {
         Police[] policeMan = new Police[6];
 
         for (int i = 0; i < policeMan.length; i++) {
-            policeMan[i] = new Police(i+1,"Policeman " + i);
+            policeMan[i] = new Police(1, "David", Police.Type.DETECTIVE);
 
             LOGGER.debug(policeMan);
         }
@@ -142,7 +163,7 @@ public class MainClass {
         bodyObjects.add(frontTire);
         bodyObjects.add(rearTire);
 
-        AudioObject speaker = new AudioObject();
+        AudioObject speaker = new AudioObject(AudioObject.Model.PIONEER);
         Store<BodyObject, AudioObject> store = new Store<>();
         store.setData(bodyObjects);
         store.setOtherData(speaker);
@@ -180,13 +201,172 @@ public class MainClass {
         Map<String, AudioObject> audioObjects = new HashMap<>();
         audioObjects.put("speaker", speaker);
 
-        LOGGER.debug("The Mappings are: " + audioObjects);
-        LOGGER.debug("Is the map empty? " + audioObjects.isEmpty());
+        LOGGER.debug(String.format("The Mappings are: %s", audioObjects));
+        LOGGER.debug(String.format("Is the map empty? %s", audioObjects.isEmpty()));
 
-        for(Map.Entry<String, BodyObject> entry : objects.entrySet()) {
+//        for (Map.Entry<String, BodyObject> entry : objects.entrySet()) {
+//            LOGGER.debug(entry.getKey());
+//            LOGGER.debug(entry.getValue());
+//
+//        }
+
+        objects.entrySet().stream().forEach((entry) -> {
+
             LOGGER.debug(entry.getKey());
             LOGGER.debug(entry.getValue());
+            });
+
+        Police police = new Police(2, "Tom", Police.Type.FEDERAL);
+        police.setType(Police.Type.DETECTIVE);
+
+        LOGGER.debug(police.getType());
+
+        int policeType = 3;
+        String stringTypes;
+        switch (policeType) {
+            case 1:
+                stringTypes = "Detective";
+                break;
+            case 2:
+                stringTypes = "Sheriff";
+                break;
+            case 3:
+                stringTypes = "Federal Investigators";
+                break;
+            default:
+                stringTypes = "Invalid police type.";
+                break;
         }
+
+        LOGGER.debug(String.format("The type of police is %s.", stringTypes));
+
+        Sedan sedan = new Sedan(1, "Red", LocalDateTime.now(), carDriver1, 5, 3, 5, true,
+                Sedan.Type.HONDA);
+        sedan.setType(Sedan.Type.HONDA);
+
+        LOGGER.debug(sedan.getType());
+
+        int carType = 1;
+        String stringType;
+        switch (carType) {
+            case 1:
+                stringType = "Honda Civic";
+                break;
+            case 2:
+                stringType = "Kia Forte";
+                break;
+            case 3:
+                stringType = "Hyundai Accent";
+                break;
+            case 4:
+                stringType = "Nissan Versa";
+                break;
+            default:
+                stringType = "Invalid car type.";
+                break;
+        }
+        LOGGER.debug(String.format("The type of car is %s.", stringType));
+
+        AudioObject audioObject = new AudioObject(AudioObject.Model.PIONEER);
+        audioObject.setModel(AudioObject.Model.PIONEER);
+
+        LOGGER.debug(audioObject.getModel());
+
+        if (audioObject.getModel() == AudioObject.Model.JVC) {
+
+            LOGGER.debug("Your audio model is JVC.");
+
+        } else if (audioObject.getModel() == AudioObject.Model.PIONEER) {
+
+            LOGGER.debug("Your audio model is Pioneer.");
+
+        } else if (audioObject.getModel() == AudioObject.Model.SONY) {
+
+            LOGGER.debug("Your audio model is Sony.");
+
+        } else {
+
+            LOGGER.debug("Your audio model is not Pioneer.");
+        }
+
+        Singleton singleton1 = Singleton.getInstance();
+        singleton1.setInfo("Singleton class string.");
+        Singleton singleton2 = Singleton.getInstance();
+        singleton2.setInfo("another Singleton class string");
+        Singleton singleton3 = Singleton.getInstance();
+        singleton3.setInfo("some other Singleton class string");
+
+        LOGGER.debug(String.format("First reference: %s", singleton1.getInfo()));
+        LOGGER.debug(String.format("Second reference: %s", singleton2.getInfo()));
+        LOGGER.debug(String.format("Third reference: %s", singleton3.getInfo()));
+
+
+        File textFile = new File("/home/sa/Downloads/NightTrain.txt");
+//        try {
+//            List<String> lines = FileUtils.readLines(textFile, StandardCharsets.UTF_8);
+//            lines.forEach(System.out::println);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+        String text = FileUtils.readFileToString(textFile, "UTF-8");
+        text = text.toLowerCase(Locale.ROOT);
+        text = text.replaceAll("[^a-z0-9]", " ");
+
+        LOGGER.debug(StringUtils.isAlphanumericSpace(text));
+
+        List<String> textList = new ArrayList<>(Arrays.asList(StringUtils.split(text)));
+        Map<String, Integer> textMap = new HashMap<>();
+//        for (String word : textList) {
+//            if (textMap.containsKey(word)) {
+//                textMap.put(word, textMap.get(word) + 1);
+//            } else {
+//                textMap.put(word, 1);
+//            }
+//        }
+
+        textList.stream().forEach((word) -> {
+            if (textMap.containsKey(word)) {
+                textMap.put(word, textMap.get(word) + 1);
+            } else {
+                textMap.put(word, 1);
+            }
+        });
+
+//        textMap.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue().reversed()).
+//                forEach(System.out::println);
+
+        ExecutorService executorService = Executors.newFixedThreadPool(5);
+        ConnectionPool connectionPool = ConnectionPool.getInstance(5);
+
+//        ConnectionTask connectionTask = new ConnectionTask();
+        Thread thread = new Thread(new ConnectionTask(connectionPool));
+        thread.start();
+
+        Stream.iterate(0, n -> n + 1)
+                .filter(x -> x % 2 == 0) //even
+                .limit(10)
+                .forEach(x -> LOGGER.debug(x));
+
+        Stream.iterate(new int[]{0, 1}, n -> new int[]{n[1], n[0] + n[1]})
+                .limit(20)
+                .map(n -> n[0])
+                .forEach(x -> LOGGER.debug(x));
+
+        String[][] dataArray = new String[][]{{"a", "b"}, {"c", "d"}, {"e", "f"}, {"g", "h"}};
+        List<String> listOfAllChars = Arrays.stream(dataArray)
+                .flatMap(x -> Arrays.stream(x))
+                .collect(Collectors.toList());
+
+        LOGGER.debug(listOfAllChars);
+
+        List<Integer> numbers = Arrays.asList(2, 3, 5, 7, 11, 13);
+        int myNumbers = numbers.stream()
+                .peek(num -> System.out.println("Will filter " + num))
+                .filter(x -> x > 5)
+                .findFirst()
+                .get();
+
+        LOGGER.debug(myNumbers);
 
     }
 }

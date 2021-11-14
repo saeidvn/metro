@@ -20,9 +20,9 @@ public class Suv extends Car implements Refuelable, IEngine, ISportCar {
     private int gear;
     private int tireSize;
 
-    public Suv(int size, String color, LocalDateTime creationDate, Person driver, String brand, String model,
+    public Suv(int size, String color, LocalDateTime creationDate, Person driver,
                int door, int compartment, int tireSize, int passengers) {
-        super(size, color, creationDate, driver, brand, model, door, compartment, passengers, true);
+        super(size, color, creationDate, driver, door, compartment, passengers, true);
         this.tireSize = tireSize;
     }
 

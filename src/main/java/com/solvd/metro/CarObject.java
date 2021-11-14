@@ -3,7 +3,7 @@ package com.solvd.metro;
 public class CarObject {
 
     private String type;
-    private String model;
+//    private String model;
 
     public String getType() {
         return type;
@@ -13,11 +13,11 @@ public class CarObject {
         this.type = type;
     }
 
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
+//    public String getModel() {
+//        return model;
+//    }
+//
+//    public void setModel(String model) {
+//        this.model = model;
+//    }
 }

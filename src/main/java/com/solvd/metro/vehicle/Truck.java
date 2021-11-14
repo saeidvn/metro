@@ -18,7 +18,7 @@ public class Truck extends Car implements Refuelable {
 
     public Truck(int size, String color, LocalDateTime creationDate, Person driver, String brand, String model,
                  int door, int compartment, int passengers, String type, int height) {
-        super(size, color, creationDate, driver, brand, model, door, compartment, passengers, false);
+        super(size, color, creationDate, driver, door, compartment, passengers, false);
         this.type = type;
         this.height = height;
     }
