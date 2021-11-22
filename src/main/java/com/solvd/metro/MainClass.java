@@ -24,6 +24,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.stream.*;
 
@@ -133,6 +134,9 @@ public class MainClass {
         officers.add("Third officer");
 
         Police[] policeMan = new Police[6];
+
+        Consumer<String> printConsumer = t -> System.out.println(t);
+        officers.forEach(printConsumer);
 
         for (int i = 0; i < policeMan.length; i++) {
             policeMan[i] = new Police(1, "David", Police.Type.DETECTIVE);
@@ -315,7 +319,7 @@ public class MainClass {
             }
         });
 
-        ExecutorService executorService = Executors.newFixedThreadPool(600);
+        ExecutorService executorService = Executors.newFixedThreadPool(5);
         ConnectionPool connectionPool = ConnectionPool.getInstance(5);
 
         IntStream.range(0, 10).boxed()
