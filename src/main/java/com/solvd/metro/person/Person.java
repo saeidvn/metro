@@ -3,6 +3,7 @@ package com.solvd.metro.person;
 import com.solvd.metro.InvalidException;
 
 import java.util.Objects;
+import java.util.function.Function;
 
 public abstract class Person {
 
@@ -111,4 +112,5 @@ public abstract class Person {
     public int hashCode() {
         return Objects.hash(age, name, surname, hairColor, eyeColor, height, weight, job);
     }
+
 }

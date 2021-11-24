@@ -202,6 +202,15 @@ public class MainClass {
         boolean spoilerExists = objects.containsKey("rearSpoiler");
 
         List<String> objectList = new ArrayList<>();
+        objectList.add("frontSpoiler");
+        objectList.add("rearSpoiler");
+        objectList.add("frontTire");
+        objectList.add("rearTire");
+
+        Function<String, Integer> objectListMapping = String::length;
+        List<Integer> objectListLength =
+                objectList.stream().map(objectListMapping).collect(Collectors.toList());
+        LOGGER.debug("Length of object list = " + objectListLength);
 
         Map<String, AudioObject> audioObjects = new HashMap<>();
         audioObjects.put("speaker", speaker);
@@ -402,6 +411,5 @@ public class MainClass {
                 .get();
 
         LOGGER.debug(myNumbers);
-
     }
 }
