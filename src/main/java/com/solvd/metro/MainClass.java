@@ -206,6 +206,8 @@ public class MainClass {
         objectList.add("rearSpoiler");
         objectList.add("frontTire");
         objectList.add("rearTire");
+        objectList.add("frontWheel");
+        objectList.add("rearWheel");
 
         Function<String, Integer> objectListMapping = String::length;
         List<Integer> objectListLength =
